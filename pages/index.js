@@ -4,7 +4,7 @@ import { FaEnvelope } from "react-icons/fa";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col items-center h-[100vh] w-full bg-slate-100">
+      <div className="flex flex-col items-center h-[100vh] w-full">
         <div className="flex flex-col justify-center items-center my-10 text-2xl font-lora text-gray-500">
           <p className="flex gap">
             <BsFillTelephoneFill size={30} />
