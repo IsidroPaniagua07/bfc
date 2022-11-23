@@ -12,6 +12,10 @@ body {
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+#__next {
+  height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +40,7 @@ a {
   /* margin-bottom: 60px; */
 }
 .header-fade {
-  animation: fadeIn ease 3s;
+  animation: fadeIn ease 2s;
 }
 .description-fade {
   animation: 3s ease 0s 1 textFadeIn;
