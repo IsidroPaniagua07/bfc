@@ -36,7 +36,7 @@ export default function Home() {
                 <Image
                   src="/1.jpg"
                   alt="landscaping"
-                  layout="responsive"
+                  layout="intrinsic"
                   height={1246}
                   width={1242}
                 />
