@@ -32,8 +32,25 @@ export default function Home() {
               </div>
             </div>
             <div className="flex h-full w-full justify-center items-center">
-              <div className="flex h-4/5 w-[50%] border-black border relative">
+              <div className="flex h-4/5 w-[50%] border-black border relative overflow-hidden">
                 <Image
+                  className="slide prev"
+                  src="/1.jpg"
+                  alt="landscaping"
+                  layout="intrinsic"
+                  height={1246}
+                  width={1242}
+                  />
+                <Image
+                  className="slide current"
+                  src="/1.jpg"
+                  alt="landscaping"
+                  layout="intrinsic"
+                  height={1246}
+                  width={1242}
+                  />
+                <Image
+                  className="slide next" 
                   src="/1.jpg"
                   alt="landscaping"
                   layout="intrinsic"
@@ -43,7 +60,8 @@ export default function Home() {
               </div>
             </div>
             <div className="text-3xl">
-              Fiscal & Co. Construction is a premiere general company located in San Diego, CA. We specialize in new construction 
+              Fiscal & Co. Construction is a premiere general company located in
+              San Diego, CA. We specialize in new construction
             </div>
           </div>
           {/* <div className="absolute bottom-[10%] left-[44%] flex flex-col justify-center items-center h-10 text-2xl footer-fade">
