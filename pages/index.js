@@ -44,23 +44,24 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col  h-[100vh] xl:w-[90%] 2xl:w-[80%] p-4 justify-self-center items-center">
-        <div className="flex h-full w-full flex-col gap-12 pt-20">
+        <div className="flex h-full w-full flex-col gap-6 sm:gap-12 pt-20">
           <div className="flex flex-col w-full xl:flex-row">
-            <div className="flex flex-col w-full xl:w-1/2">
-              <h3 className="flex justify-center xl:justify-start home-header header-fade underline decoration-[#960018] decoration-[6px] gap-0 leading-none">
+            <div className="flex flex-col w-full xl:w-1/2 ">
+              <h3 className="flex justify-center xl:justify-start home-header header-fade underline decoration-[#960018] 
+              decoration-[6px] gap-0 leading-none text-[68px] sm:text-[90px]">
                 Fiscal & Co. <br />{" "}
               </h3>
-              <div className="flex justify-center xl:justify-start font-julius text-6xl header-fade leading-none">
+              <div className="flex justify-center xl:justify-start font-julius text-5xl sm:text-6xl header-fade leading-none">
                 Construction
               </div>
             </div>
             <div className="flex flex-col w-full xl:w-1/2  overflow-hidden justify-start items-start xl:justify-end xl:items-end">
-              <h2 className="flex w-full home-description h-auto description-fade text-2xl justify-center items-center">
+              <h2 className="flex w-full home-description h-auto description-fade text-lg sm:text-2xl justify-center items-center">
                 Honesty, reliability, and superior craftsmanship.
               </h2>
             </div>
           </div>
-          <div className="flex flex-row h-[10%] justify-center items-center text-2xl font-lora text-gray-500 gap-8 md:gap-16 xl:gap-32 2xl:gap-40">
+          <div className="flex flex-row h-[10%] justify-center items-center text-md sm:text-2xl font-lora text-gray-500 gap-8 md:gap-16 xl:gap-32 2xl:gap-40">
             <p className="flex gap-1">
               <BsFillTelephoneFill size={30} />
               (619) 381-8593
@@ -110,7 +111,7 @@ export default function Home() {
                 </div>
             </div>
           </div> */}
-          <div className="text-3xl mt-58">
+          <div className="text-xl sm:text-3xl ">
             Fiscal & Co. Construction is a premiere general company located in
             San Diego, CA. We specialize in new construction projects.
           </div>
