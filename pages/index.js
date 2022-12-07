@@ -43,7 +43,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col  h-[100vh] xl:w-[90%] 2xl:w-[80%] p-4 justify-self-center items-center">
+      <div className="flex flex-col  h-[100vh] xl:w-[90%] 2xl:w-[80%] justify-self-center items-center">
         <div className="flex h-full w-full flex-col gap-6 sm:gap-12 pt-20">
           <div className="flex flex-col w-full xl:flex-row">
             <div className="flex flex-col w-full xl:w-1/2 ">
@@ -57,11 +57,11 @@ export default function Home() {
             </div>
             <div className="flex flex-col w-full xl:w-1/2  overflow-hidden justify-start items-start xl:justify-end xl:items-end">
               <h2 className="flex w-full home-description h-auto description-fade text-lg sm:text-2xl justify-center items-center">
-                Honesty, reliability, and superior craftsmanship.
+                Honesty - Reliability - Superior craftsmanship.
               </h2>
             </div>
           </div>
-          <div className="flex flex-row h-[10%] justify-center items-center text-md sm:text-2xl font-lora text-gray-500 gap-8 md:gap-16 xl:gap-32 2xl:gap-40">
+          <div className="flex flex-col sm:flex-row h-[10%] justify-center items-center text-md sm:text-2xl font-lora text-gray-500 gap-2 sm:gap-8 md:gap-16 xl:gap-32 2xl:gap-40">
             <p className="flex gap-1">
               <BsFillTelephoneFill size={30} />
               (619) 381-8593
