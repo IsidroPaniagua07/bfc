@@ -43,12 +43,14 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col  h-[100vh] xl:w-[90%] 2xl:w-[80%] justify-self-center items-center">
+      <div className="flex flex-col  xl:w-[90%] 2xl:w-[80%] justify-self-center items-center">
         <div className="flex h-full w-full flex-col gap-6 sm:gap-12 pt-20">
           <div className="flex flex-col w-full xl:flex-row">
             <div className="flex flex-col w-full xl:w-1/2 ">
-              <h3 className="flex justify-center xl:justify-start home-header header-fade underline decoration-[#960018] 
-              decoration-[6px] gap-0 leading-none text-[68px] sm:text-[90px]">
+              <h3
+                className="flex justify-center xl:justify-start home-header header-fade underline decoration-[#960018] 
+              decoration-[6px] gap-0 leading-none text-[68px] sm:text-[90px]"
+              >
                 Fiscal & Co. <br />{" "}
               </h3>
               <div className="flex justify-center xl:justify-start font-julius text-5xl sm:text-6xl header-fade leading-none">
@@ -71,50 +73,32 @@ export default function Home() {
               BoniFacioF12@gmail.com
             </p>
           </div>
-          {/* <div className="flex h-[650px] w-full justify-center items-center">
-              <div className="flex h-[623px] w-[621px] relative justify-center items-center text-center ">
-                <button
-                  className="carousel-button left"
-                  onClick={() => move("left")}
-                >&#8249;</button>
-                <button
-                  className="carousel-button right"
-                  onClick={() => move("right")}
-                >
-                  &#8250;
-                </button>
-                <div className="h-full w-full relative slider rounded-[3rem]">
-                  <Image
-                    className="slide prev"
-                    src="/2.jpg"
-                    alt="construction"
-                    layout="intrinsic"
-                    height={623}
-                    width={621}
-                  />
-                  <Image
-                    className="slide current"
-                    src="/1.jpg"
-                    alt="construction"
-                    layout="intrinsic"
-                    height={623}
-                    width={621}
-                  />
-                  <Image
-                    className="slide next"
-                    src="/2.jpg"
-                    alt="construction"
-                    layout="intrinsic"
-                    height={623}
-                    width={621}
-                  />
-                </div>
-            </div>
-          </div> */}
-          <div className="text-xl sm:text-3xl ">
+          <div className="text-xl sm:text-3xl px-4">
             Fiscal & Co. Construction is a premiere general company located in
             San Diego, CA. We specialize in new construction projects.
           </div>
+          <div className="flex flex-col h-full lg:flex-row w-full justify-evenly items-center p-4 gap-8 lg:gap-0">
+
+            <div className="flex h-full w-full lg:h-[415px] lg:w-[414px] justify-evenly relative items-center">
+              <Image
+                className="h-auto w-full aspect-square object-cover"
+                src="/2.jpg"
+                alt="construction"
+                width={1246}
+                height={1242}
+              />
+            </div>
+            <div className="flex h-full w-full lg:h-[415px] lg:w-[414px] justify-evenly relative items-center">
+              <Image
+                className="h-auto w-full aspect-square object-cover"
+                src="/2.jpg"
+                alt="construction"
+                width={1246}
+                height={1242}
+              />
+            </div>
+          </div>
+
           {/* <div className="absolute bottom-[10%] left-[44%] flex flex-col justify-center items-center h-10 text-2xl footer-fade">
             <p>Se habla Español!</p>
             <p>619-123-4567</p>
