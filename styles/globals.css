@@ -91,10 +91,6 @@ a {
 }
 
 
-.photo {
-
-}
-
 .slide.current {
   transition-delay: 0ms;
   transform: translateX(0%);

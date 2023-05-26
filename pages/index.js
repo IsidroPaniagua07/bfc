@@ -1,6 +1,7 @@
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   let slider;
@@ -41,10 +42,11 @@ export default function Home() {
   //   next = current.nextElementSibling || slider.firstElementChild;
   // }
 
+  const imagesArray = ['/1.jpg', '/2.jpg', '/1.jpg', '/2.jpg']
   return (
     <>
       <div className="flex flex-col  xl:w-[90%] 2xl:w-[80%] justify-self-center items-center">
-        <div className="flex h-full w-full flex-col gap-6 sm:gap-12 pt-20">
+        <div className="flex h-full w-full flex-col gap-6 sm:gap-12 pt-4">
           <div className="flex flex-col w-full xl:flex-row">
             <div className="flex flex-col w-full xl:w-1/2 ">
               <h3
@@ -77,26 +79,20 @@ export default function Home() {
             Fiscal & Co. Construction is a premiere general company located in
             San Diego, CA. We specialize in new construction projects.
           </div>
-          <div className="flex flex-col h-full lg:flex-row w-full justify-evenly items-center p-4 gap-8 lg:gap-0">
-
-            <div className="flex h-full w-full lg:h-[415px] lg:w-[414px] justify-evenly relative items-center">
-              <Image
-                className="h-auto w-full aspect-square object-cover"
-                src="/2.jpg"
-                alt="construction"
-                width={1246}
-                height={1242}
-              />
-            </div>
-            <div className="flex h-full w-full lg:h-[415px] lg:w-[414px] justify-evenly relative items-center">
-              <Image
-                className="h-auto w-full aspect-square object-cover"
-                src="/2.jpg"
-                alt="construction"
-                width={1246}
-                height={1242}
-              />
-            </div>
+          <div className="grid grid-cols-2 gap-y-3 gap-x-3 h-full w-full justify-evenly items-center px-3">
+          {imagesArray.map((imageSource, index) => { return ( 
+            <div key={index} className="flex h-full w-full justify-evenly relative items-center">
+              <Link href={imageSource}>
+                <Image
+                    className="h-auto w-auto object-cover rounded-lg border-[#ddd] border hover:border-[#84add6]
+                    hover:-translate-y-[4px] transition-all duration-300 ease-in-out"
+                    src={imageSource}
+                    alt="construction"
+                    width={1246}
+                    height={1242}
+                    />
+              </Link>
+            </div> )})}          
           </div>
 
           {/* <div className="absolute bottom-[10%] left-[44%] flex flex-col justify-center items-center h-10 text-2xl footer-fade">
